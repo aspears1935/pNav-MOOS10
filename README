@@ -1,0 +1,68 @@
+##############################################################################
+# FILE:        moos-ivp-aspears/README
+# DATE:        2019-07-25
+# DESCRIPTION: Contains important information regarding the moos-ivp-extend
+#              repository.
+##############################################################################
+
+#=============================================================================
+# Introduction
+#=============================================================================
+The moos-ivp-extend repository contains examples for extending the MOOS-IvP
+Autonomy system. This includes a MOOS application and an IvP behavior.
+
+Contact: Anthony Spears, Georgia Tech EAS
+Email: aspears@gatech.edu
+
+pNav Module:
+===========
+The purpose of this is to refresh the MOOS pNav module and bring it current
+with MOOS 10 and moos-ivp 17. If you are interested in learning more about the
+original pNav module, please contact the original author Paul Newman
+(pnewman@robots.ox.ac.uk). His information is in the source code in this project.
+Included is an example adaptation of s1_alpha mission using the simulated data
+as the sole source of nav information for pNav. The original pNav module was
+dropped from MOOS after moos-ivp-12.0.
+
+#=============================================================================
+# Directory Structure
+#=============================================================================
+The directory structure for the moos-ivp-extend is decribed below:
+
+bin              - Directory for generated executable files
+build            - Directory for build object files
+build.sh         - Script for building moos-ivp-extend
+CMakeLists.txt   - CMake configuration file for the project
+data             - Directory for storing data
+lib              - Directory for generated library files
+missions         - Directory for mission files
+README           - Contains helpful information - (this file).
+scripts          - Directory for script files
+src              - Directory for source code
+
+
+#=============================================================================
+# Build Instructions
+#=============================================================================
+#--------------------
+# Linux and Mac Users
+#--------------------
+
+To build on Linux and Apple platforms, execute the build script within this
+directory:
+
+   $ ./build.sh
+
+To build without using the supplied script, execute the following commands
+within this directory:
+
+   $ mkdir -p build
+   $ cd build
+   $ cmake ../
+   $ make
+   $ cd ..
+
+##############################################################################
+#                               END of README
+##############################################################################
+

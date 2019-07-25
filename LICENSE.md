@@ -1,0 +1,1 @@
+This software is released under the same open source GPL license as the original software released as part of the MOOS repository in MOOS-IvP 12.2 (MOOS-2375-Oct0611-Modified). Please see the original repository for further licensing information.
